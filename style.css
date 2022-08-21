@@ -1,15 +1,18 @@
 html {
-    height: 100%;
+    background-image: linear-gradient(#FC5E55 ,#FA4083);
 }
 
 body {
-    background-image: linear-gradient(#FC5E55 ,#FA4083);
+    background-image: url(images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.125rem;
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
@@ -26,6 +29,7 @@ header{
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
 }
 
 main{
@@ -35,7 +39,6 @@ main{
 }
 
 .cards{
-    min-height: 300px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -47,7 +50,7 @@ main{
     background-position: bottom;
     min-height: 250px;
     width: 30%;   
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
 }
 
 .card2 {
@@ -124,6 +127,11 @@ p {
     padding: 11px 25px;
 }
 
+.myButton:hover {
+    background-color: rgb(24, 215, 37);
+    transition-delay: 1ms;
+}
+
 a.myButton{
     display: inline-block;
     margin-top: 20px;
@@ -133,4 +141,62 @@ a.myButton{
 
 .smallBox img {
     border-radius: 10px;
+}
+
+nav a.myButton {
+    margin-left: 30px;
+}
+
+.navButton {
+    border: 1px solid white;
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    display: inline-block;
+    position: relative;
+
+}
+
+.testinomials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.tbox { 
+    width: 47% ;
+    border: 1px solid white;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.tbox :last-child {
+    font-size: 0.8rem;
+}
+
+.dropDown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.navButton:hover .dropDown {
+    display: block;
+}
+
+.dropDown .navButton {
+    width: 120px;
+    background-color: white;
+}
+
+.dropDown .navButton a {
+    color: #FA4083;
+}
+
+.dropDown .navButton:hover {
+    background-color: aquamarine;
 }
